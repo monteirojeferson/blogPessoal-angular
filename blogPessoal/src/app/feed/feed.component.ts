@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostagemService } from '../service/postagem.service';
 import { Postagem } from '../model/Postagem';
-import { Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-feed',
@@ -9,6 +8,9 @@ import { Subscriber } from 'rxjs';
   styleUrls: ['./feed.component.css']
 })
 export class FeedComponent implements OnInit {
+
+  key = 'data'
+  reverse = true
 
   listaPostagens: Postagem []
 
